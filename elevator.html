@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="elevator.css" />
+    <title>elevator</title>
+  </head>
+  <body>
+    <div class="container">
+      <span class="controls">
+        <input
+          type="text"
+          id="numFloors"
+          class="numInput"
+          inputmode="numeric"
+          maxlength="2"
+          placeholder="...מספר קומות"
+          onkeyup="numOfFloor(this.value ,event)"
+        />
+        <input
+          type="text"
+          id="numElevators"
+          class="numInput"
+          inputmode="numeric"
+          maxlength="2"
+          placeholder="...מספר מעליות"
+          onkeyup="numOfElv(this.value ,event)"
+        />
+      </span>
+    </div>
+    <script src="./elevator.js"></script>
+  </body>
+</html>
